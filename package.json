@@ -5,14 +5,14 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jide/wrap-children.git"
+    "url": "https://github.com/jide/react-wrapchildren.git"
   },
   "author": "Julien De Luca",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jide/wrap-children/issues"
+    "url": "https://github.com/jide/react-wrapchildren/issues"
   },
-  "homepage": "https://github.com/jide/wrap-children",
+  "homepage": "https://github.com/jide/react-wrapchildren",
   "scripts": {
     "test": "node node_modules/karma/bin/karma start karma.conf.js",
     "test:watch": "./node_modules/karma/bin/karma start karma.conf.js --no-single-run",
