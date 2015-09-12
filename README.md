@@ -21,3 +21,23 @@ const WrappedComponent = wrapChildren(MyComponent);
 
 <WrappedComponent something={ 'Any prop for MyComponent' } wrapper={ <Animate transitionName='fade'/> }/>
 ```
+
+If the render function of MyComponent renders this :
+```html
+<div>
+  <span/>
+  <span/>
+  <span/>
+</div>
+```
+
+It will return instead :
+```html
+<div>
+  <Animate>
+    <span/>
+    <span/>
+    <span/>
+  </Animate>
+</div>
+```
