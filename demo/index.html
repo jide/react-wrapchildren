@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.js"></script>
+  <![endif]-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Demo</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+    .fade-enter {
+      transform-origin: top;
+      transform: scaleY(0);
+      animation-duration: .5s;
+      animation-fill-mode: both;
+      animation-play-state: paused;
+    }
+    .fade-appear {
+        transform-origin: top;
+      transform: scaleY(0);
+      animation-duration: .5s;
+      animation-fill-mode: both;
+      animation-play-state: paused;
+    }
+    .fade-leave {
+        transform-origin: top;
+      animation-duration: .5s;
+      animation-fill-mode: both;
+      animation-play-state: paused;
+    }
+    .fade-enter.fade-enter-active {
+      animation-name: fadeIn;
+      animation-play-state: running;
+    }
+    .fade-appear.fade-appear-active {
+      animation-name: fadeIn;
+      animation-play-state: running;
+    }
+    .fade-leave.fade-leave-active {
+      animation-name: fadeOut;
+      animation-play-state: running;
+    }
+    @keyframes fadeIn {
+      0% {
+        transform: scaleY(0);
+      }
+      100% {
+        transform: scaleY(1);
+      }
+    }
+    @keyframes fadeOut {
+      100% {
+        transform: scaleY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div id="content">
+  </div>
+  <script type="text-javascript" src="http://localhost:3000/webpack-dev-server.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.7/es5-shim.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.1.7/es5-sham.min.js"></script>
+  <![endif]-->
+</body>
+</html>
